@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Keeper</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="SIK.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="SIK.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="SIK.png">
+  <link rel="stylesheet" href="cn.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>SayItNow</h2>
+    <h2>Speak Freely. Stay Hidden.</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" id="confessionForm">
+      <input type="hidden" name="access_key" value="eb636808-c883-447a-92e2-ebc057287e0c">
+
+      <input type="text" name="name" placeholder="I Know You can Confess" required>
+      <!-- <input type="text" name="branch" placeholder="Branch">
+      <input type="text" name="year" placeholder="Year"> -->
+      <input type="text" name="song" placeholder="Which song Do You want..">
+      <select name="mood">
+        <option value="" disabled selected>Current Mood</option>
+        <option value="happy">😊 Happy</option>
+        <option value="sad">😢 Sad</option>
+        <option value="excited">😄 Excited</option>
+        <option value="angry">😠 Angry</option>
+        <option value="nervous">😬 Nervous</option>
+      </select>
+      <select name="topic">
+        <option value="" disabled selected>Confession Topic</option>
+        <option value="academic">📚 Academic</option>
+        <option value="personal">🧠 Personal</option>
+        <option value="friendships">👫 Friendships</option>
+        <option value="relationships">❤️ Relationships</option>
+      </select>
+      <textarea name="confession" placeholder="Your confession..." rows="4" required></textarea>
+      <textarea name="suggestion" placeholder="Any suggestions? Drop Your Contact!!" rows="2"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Submission message div -->
+    
+    <div id="submissionMessage" class="hidden"></div>
+  </div>
+
+
+  <!-- <script src="cn.js"></script> -->
+</body>
+
+</html>
