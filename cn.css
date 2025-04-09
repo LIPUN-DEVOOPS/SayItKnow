@@ -1,0 +1,316 @@
+/* Basic Reset and Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  /* Background */
+  body {
+    background-image: url('bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  
+  /* Container styling */
+  .form-container {
+    color: rgb(255, 255, 255);
+    
+    width: 60%;
+    max-width: 500px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .visitor-counter {
+    padding: 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .form-container h2 {
+    
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Input and Select Styling */
+  .form-container input, 
+  .form-container select, 
+  .form-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-container select {
+    appearance: none;
+    background-color: #f9f9f9;
+  }
+  
+  /* Checkbox styling */
+  .form-container label {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .form-container label input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+  }
+  
+  /* Input focus effect */
+  .form-container input:focus, 
+  .form-container select:focus, 
+  .form-container textarea:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  }
+  
+  /* Button styling and hover effect */
+  .form-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4A90E2;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #3a7ed0;
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  
+  .form-container input[name="emoji_reaction"] {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+/* Submission message styling */
+#submissionMessage {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Class to hide the message initially */
+  .hidden {
+    display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-end;
+    align-content: space-between;
+    
+    height: 80vh;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+#visitCounter {
+    font-size: 24px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+    opacity: 0; /* Start with invisible */
+}
+
+.fade-in {
+    opacity: 1; /* Make visible */
+    transform: scale(1.1); /* Scale up */
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#visitor-count-container {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#visitor-count {
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Visitor Counter */
+.visitor-counter {
+  padding: 20px;
+  background-color: #ffeb3b;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.visitor-counter h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .form-container button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  #visitCounter,
+  .visitor-counter {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 100%;
+  }
+
+  #visitor-count-container {
+    font-size: 1.2em;
+  }
+
+  form {
+    align-items: stretch;
+  }
+
+  input, button {
+    font-size: 1rem;
+  }
+}
