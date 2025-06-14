@@ -1,6 +1,6 @@
 # SayItKnow 💬
 
-**SayItKnow** is an anonymous confession web application built specifically for students of Gandhi Engineering College (GEC). This platform provides users a safe space to express their feelings, thoughts, or secrets — anonymously. Whether it's a heartfelt confession, a shoutout to someone special, or just a random thought, SayItKnow gives GEC students a voice.
+**SayItKnow** is an anonymous confession web application . This platform provides users a safe space to express their feelings, thoughts, or secrets — anonymously. Whether it's a heartfelt confession, a shoutout to someone special, or just a random thought, SayItKnow gives GEC students a voice.
 
 ## 🚀 Features
 
